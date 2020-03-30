@@ -2,48 +2,48 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Register With Us</title>
     </head>
     <body>
-        <h1>Register With Us</h1>
-        <form method="POST" action="http://request-inspector.glitch.me/">
-            <div>
-                <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div>
-                <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="pwd">
-            </div>
-                <h3>BIO</h3>
-            <div>
-                 <textarea>
+        <main>
+            <form method="POST" action="http://request-inspector.glitch.me/">
+                <div>
+                    <h1>Register With Us</h1>
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" placeholder="Email Here" name="email">
+                </div>
+                <div>
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="pwd" placeholder="Password Here">
+                </div>
+                <div>
+                     <h3>BIO</h3>
+                     <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Type Here"></textarea>
+                </div>
+                    <h3>How did you hear about us?</h3>
+                <div>
+                     <input type="radio" id="billboard" name="ads" value="billboard">
+                     <label for="billboard">Billboard</label><br>
+                     <input type="radio" id="radio ad" name="ads" value="radio ad">
+                     <label for="radio ad">Radio Advertisement</label><br>
+                     <input type="radio" id="internet" name="ads" value="Internet">
+                     <label for="internet">Internet Advertisement</label><br>
+                     <input type="radio" id="other" name="ads" value="other">
+                     <label for="other">other</label>
+                </div>
+                     <h3>What Browser are you using?</h3>
+                <div>
+                     <label for="browser">Choose a browser:</label>
 
-                </textarea>
-            </div>
-                <h3>How did you hear about us?</h3>
-            <div>
-                 <input type="radio" id="billboard" name="hear" value="male">
-                 <label for="billboard">Billboard</label><br>
-                 <input type="radio" id="Radio Advertisement" name="hear" value="female">
-                 <label for="Radio Advertisement">Radio Advertisement</label><br>
-                 <input type="radio" id="Internet" name="hear" value="other">
-                 <label for="Internet">Internet Advertisement</label><br>
-                 <input type="radio" id="other" name="hear" value="other">
-                 <label for="other">other</label>
-            </div>
-                 <h3>What Browser are you using?</h3>
-            <div>
-                 <label for="browser">Choose a browser:</label>
-
-                 <select id="browser">
-                     <option value="google chrome">Google Chrome</option>
-                     <option value="firefox">Firefox</option>
-                     <option value="microsoft edge">Mircosoft Egde</option>
-                     <option value="opera">Opera</option>
-                 </select><br>
-                 <button>Submit</button>
-            </div>
-        </form>
+                     <select id="browser">
+                         <option value="google chrome">Google Chrome</option>
+                         <option value="firefox">Firefox</option>
+                         <option value="microsoft edge">Mircosoft Egde</option>
+                         <option value="opera">Opera</option>
+                     </select><br>
+                     <button>Submit</button>
+                </div>
+            </form>
+        </main>
     </body>
 </html>

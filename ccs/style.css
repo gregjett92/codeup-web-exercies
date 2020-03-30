@@ -1,0 +1,52 @@
+h1 {
+   color: violet;
+   text-align: center;
+}
+body {
+   text-align: center;
+   background-color: aliceblue;
+   background-image: url("../img/colorful.jpg");
+   object-fit: contain;
+   font-family: 'Baloo Thambi 2', cursive;
+
+}
+
+table, tr, td {
+   border:5px solid violet;
+   border: 20px groove violet;
+}
+
+.table_center {
+   margin-left: auto;
+   margin-right: auto;
+   color: white;
+}
+
+a, a:link {
+   color: blue;
+}
+
+a:hover {
+   color: green;
+}
+
+a:visited {
+   color: purple;
+}
+
+a:active {
+   text-decoration: underline;
+   color: white;
+}
+
+.list {
+   list-style-type: none;
+   list-style-position: inside;
+   font-size: 16px;
+   color: white;
+}
+
+.underline {
+   border-bottom-color: white;
+   border-top-color: violet;
+}
