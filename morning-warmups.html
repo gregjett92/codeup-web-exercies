@@ -8,13 +8,25 @@
 <script>
     "use strict";
 
-    function charLength(str) {
-        if (str.length >= 8) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    //function charLength(str) {
+       // if (str.length >= 8) {
+        //    return true;
+        //} else {
+         //   return false;
+       // }
+   // }
+      function twoMoreAwayFromZero(num) {
+         if(num >= 0) {
+             return num + 2;
+         } else {
+             return num - 2;
+         }
+      }
+        twoMoreAwayFromZero(2) will return 4
+        twoMoreAwayFromZero(0) will return 2
+        twoMoreAwayFromZero(0.5) will return 2.5
+        twoMoreAwayFromZero(-2) will return -4
+        twoMoreAwayFromZero(-3.5) will return -5.5
 </script>
 
 </body>
