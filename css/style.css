@@ -14,12 +14,15 @@ body {
 table, tr, td {
    border:5px solid violet;
    border: 20px groove violet;
+
 }
 
 .table_center {
    margin-left: auto;
    margin-right: auto;
    color: white;
+   padding: 50px;
+   font-size: 20px;
 }
 
 a, a:link {
