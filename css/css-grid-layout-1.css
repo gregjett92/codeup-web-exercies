@@ -1,0 +1,35 @@
+div {
+    padding: 10px 0px 0px 10px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 500px;
+    width: 900px;
+    font-size: 12px;
+    background-color: white;
+
+}
+.header {
+    grid-area: 1 / 1 / 2 / 6;
+    background-color: yellow;
+}
+.nav{
+    grid-area: 2 / 1 / 10 / 2;
+    background-color: yellow;
+}
+.article {
+    grid-area: 9/ 2 / 10 / 6;
+    background-color: yellow;
+}
+.ads {
+    grid-area: 2 / 5 / 9 / 6;
+    background-color: yellow;
+}
+.footer {
+    grid-area: 2 / 2 / 9 / 5;
+    background-color: yellow;
+}
