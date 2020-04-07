@@ -1,0 +1,34 @@
+div {
+    padding: 8px 0px 0px 8px;
+    font-size: 12px;
+}
+.wrapper {
+    display: grid;
+    height: 500px;
+    width: 1000px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 6;
+    background-color: limegreen;
+}
+.div2 {
+    grid-area: 2 / 1 / 9 / 2;
+    background-color: limegreen;
+}
+.div3 {
+    grid-area: 2 / 2 / 8 / 6;
+    background-color: limegreen;
+}
+.div4 {
+    grid-area: 8 / 2 / 9 / 6;
+    background-color: limegreen;
+}
+.div5 {
+    grid-area: 9 / 1 / 10 / 6;
+    background-color: limegreen;
+}
