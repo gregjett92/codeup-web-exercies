@@ -1,0 +1,56 @@
+div {
+    padding: 8px 0px 0px 8px;
+    font-size: 12px;
+}
+.wrapper {
+    display: grid;
+    height: 500px;
+    width: 1000px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 5;
+    background-color: yellow;
+}
+.div2 {
+    grid-area: 2 / 1 / 6 / 2;
+    background-color: yellow;
+
+}
+.div3 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: yellow;
+
+}
+.div4 {
+    grid-area: 2 / 3 / 3 / 5;
+    background-color: yellow;
+}
+.div5 {
+    grid-area: 3 / 2 / 4 / 4;
+    background-color: yellow;
+}
+.div6 {
+    grid-area: 3 / 4 / 4 / 5;
+    background-color: yellow;
+}
+.div7 {
+    grid-area: 4 / 2 / 5 / 3;
+    background-color: yellow;
+}
+.div8 {
+    grid-area: 4 / 3 / 5 / 4;
+    background-color: yellow;
+}
+.div9 {
+    grid-area: 4 / 4 / 5 / 5;
+    background-color: yellow;
+}
+.div10 {
+    grid-area: 5 / 2 / 6 / 5;
+    background-color: yellow;
+}
