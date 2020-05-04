@@ -58,17 +58,39 @@
     // console.log(isWholeNum(5));
     // console.log(isWholeNum(.5));
 
-    function largerValue (n1, n2) {
-        if (n1 >= n2) {
-            return n1
+    // function largerValue (n1, n2) {
+    //     if (n1 >= n2) {
+    //         return n1
+    //     } else {
+    //         return n2
+    //     }
+    // }
+    //
+    // console.log(largerValue(4));
+    // console.log(isWholeNum(5));
+    // console.log(isWholeNum(.5));
+
+    var favoriteShows = ["dbz", "good times", "bbt"];
+
+    favoriteShows.forEach(function(show){
+        console.log(show);
+    })
+
+    for (let i = 0; i <= 100; i++){
+        if( i % 3 === 0 && i % 5 === 0) {
+            console.log('fizzbuzz');
+        } else if (i % 3 === 0) {
+            console.log('fizz');
+        } else if (i % 5 === 0){
+            console.log('buzz')
         } else {
-            return n2
+            console.log(i);
         }
     }
 
-    console.log(largerValue(4));
-    console.log(isWholeNum(5));
-    console.log(isWholeNum(.5));
+
+
+
 
 </script>
 
