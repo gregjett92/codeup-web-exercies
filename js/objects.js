@@ -27,7 +27,11 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    // console.log(person.sayHello(Hello));
+    person.sayHello = function(){
+        return "Hello from " + this.firstName + " "this.lastName + "!";
+    };
+
+    // console.log(person.sayHello());
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -48,9 +52,16 @@
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
-
-
-
+    fucntion discountChecker(shoppers) {
+        shoopers.forEach(function(shopper){
+            if(shoppers.amount >= 200) {
+                console.log(shopper.name = "has spent $" + shopper.amount.tofixed(2) + " today. They qualify for 12% discount, and therefore have a total of $" +(shopper.amount - (shopper.amount * .12));
+            } else {
+                console.log(shopper.name + ", thank you for shopping with us today. Your final total today is: $" + shopper.total.toFixed(2) + ". If you add $" (200 - shopper.amount).toFixed())
+            }
+        })
+    }
+    discountChecker(shoppers);
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -127,9 +138,14 @@
      *      ---
      *      ...
      */
-       books.forEach(function (book){
-           return book[i].title.firstName.lastName();
-       });
+      function loggingBooks (books) {
+        //   for (var x = 0; x < books.length; x++) {
+        //       console.log(" book #" + (x + 1) + "\n" "Book Title: " + books[x].title + "\n" + "Book Author: " + books[x].author.firstName + " " + books[x].author.lastName);
+        // }
+        books.forEach(function (book, index) {
+
+        })
+    }
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -140,5 +156,8 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+    function createBook (title, fName, lName) {
+        return [title: title,
+    }
 
 })();
