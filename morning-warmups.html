@@ -58,17 +58,28 @@
     // console.log(isWholeNum(5));
     // console.log(isWholeNum(.5));
 
-    function largerValue (n1, n2) {
-        if (n1 >= n2) {
-            return n1
-        } else {
-            return n2
-        }
-    }
+    // function largerValue (n1, n2) {
+    //     if (n1 >= n2) {
+    //         return n1
+    //     } else {
+    //         return n2
+    //     }
+    // }
+    //
+    // console.log(largerValue(4));
+    // console.log(isWholeNum(5));
+    // console.log(isWholeNum(.5));
 
-    console.log(largerValue(4));
-    console.log(isWholeNum(5));
-    console.log(isWholeNum(.5));
+    // Write a javascript function that takes in a number and returns the number raised to the power of four. If any argument is passed into the function that is not a number, return false.
+
+    function powerOf(num){
+        if(!isNaN(num) && typeof num === "number") {
+            return Math.pow(num, 3)
+        } else {
+            return false;
+        }
+
+    }
 
 </script>
 
