@@ -129,18 +129,68 @@
         </div><br>
     </dl>
     <button id="styler-2">Click me to highlight last list item</button>
+    <h3>Yellowstone National Park</h3>
+    <ul>
+        <li>Yellowstone encompasses 3,472 square miles (2,221,766 acres) which makes it larger than Rhode Island and Delaware combined.</li>
+        <li>Yellowstone is home to more than 500 active geysers (more than half the world’s geysers).</li>
+        <li>Yellowstone is home to the largest concentration of mammals in the lower 48 states (67 species).</li>
+        <li>There are approximately 1,000 miles of hiking trails in Yellowstone.</li>
+    </ul>
+    <h3>Yosemite National Park</h3>
+    <ul>
+        <li>Located in the Sierra Nevada Mountains of California, Yosemite National Park spans 761,268 acres of land</li>
+        <li>Before it became a national park, Yosemite had already been under government protection since 1864, as signed by President Lincoln. This was the first time land became secured by the government due to its natural beauty, to be preserved for people to enjoy.
+
+        </li>
+        <li>Before it became a national park, Yosemite had already been under government protection since 1864, as signed by President Lincoln. This was the first time land became secured by the government due to its natural beauty, to be preserved for people to enjoy.
+
+        </li>
+        <li>There are more than 400 species of animals living in Yosemite, 90 of which are different mammal species.
+
+        </li>
+    </ul>
+    <h3>Zion National Park</h3>
+    <ul>
+        <li>
+            The person who is credited with naming the place “Zion” is also the same person who, in 1863, settled the canyon floor. His name is Isaac Behunin.
+        </li>
+        <li>
+            1917 was the first year tourists arrived here by way of automobile.
+        </li>
+        <li>
+            The first recognized and exhibited paintings of Zion were created by artist Frederick Dellenbaugh who displayed his work at the St. Louis World’s Fair in 1904.
+        </li>
+        <li>
+            The Anasazi, the original occupants of Zion Canyon, have left behind rock art and many cliff dwellings that are between 800 and 1,500 years old and can still be seen today.
+        </li>
+    </ul>
+
+    <button id="styler-3 btn-2">Click me to highlight last list item</button>
     <script src="js/jquery-2.2.4.js"></script>
     <script>
         $(document).ready(function() {
             // $('dd').addClass('invisible');
 
-            $('#styler').click(function(){
+            $('#btn-1').click(function(){
                 $('dd').toggleClass('invisible');
             });
 
             $('dt').click(function(){
                 $(this).toggleClass('highlighter');
             });
+
+            $("#btn-2").click(function() {
+               $("li").each(function() {
+                   $(this).children().last().css("background", "yellow");
+               });
+            });
+            $("h3").click(function () {
+               $(this).next().children().css("font-weight", "bold")
+            });
+
+            $(li).click(function() {
+                $(this).parent().children().first().css("color,", "blue");
+            })
         });
 
     </script>

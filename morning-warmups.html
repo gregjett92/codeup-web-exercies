@@ -72,14 +72,31 @@
 
     // Write a javascript function that takes in a number and returns the number raised to the power of four. If any argument is passed into the function that is not a number, return false.
 
-    function powerOf(num){
-        if(!isNaN(num) && typeof num === "number") {
-            return Math.pow(num, 3)
-        } else {
-            return false;
-        }
+    // function powerOf(num){
+    //     if(!isNaN(num) && typeof num === "number") {
+    //         return Math.pow(num, 3)
+    //     } else {
+    //         return false;
+    //     }
+    //
+    // }
 
+    function returnNum (str){
+        // var count = 0
+        // for(var i = 0; i < returnNum.length; i++)
+        //     if(str(i) === " ") {
+        //         count = +1;
+        //     }
+        //     count +=1
+        if (typeof str === "string"){
+            return str.split(" ").length;
+        } else {
+            return 0;
+        }
     }
+    console.log(returnNum("Random String"));
+    console.log(returnNum(99))
+    returnNum()
 
 </script>
 
